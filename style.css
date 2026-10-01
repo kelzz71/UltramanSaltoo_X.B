@@ -1,0 +1,156 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: pink;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card-container {
+    width: 100%;
+    max-width: 1000px;
+    background: url('https://cdn.getyourguide.com/image/format=avif%2Cfit=cover%2Cgravity=auto%2Cquality=60/dam/BCC-2024-EXPLORER-LONDON-LANDMARKS-HEADER-MOBILE.jpg') no-repeat center center/cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border: 3px solid #1e3a8a;
+    position: relative;
+}
+
+
+header {
+    background-color: rgba(30, 58, 138, 0.9);
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    border-bottom: 3px solid #dc2626;
+}
+
+.author-tag {
+    text-align: right;
+    padding: 8px 20px 0;
+    font-size: 14px;
+    color: Black;
+    font-weight: 600;
+}
+
+
+.members-bar {
+    background-color: #facc15;
+    color: #0f172a;
+    padding: 10px 20px;
+    margin: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.member-item {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 4px 12px;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+.content {
+    padding: 20px 30px 40px;
+    color: #0f172a;
+}
+
+.group-title {
+    font-style: italic;
+    font-size: 18px;
+    margin-bottom: 25px;
+    background: rgba(255, 255, 255, 0.75);
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+
+.action-box {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 15px;
+    border-radius: 10px;
+    width: fit-content;
+    margin-bottom: 25px;
+    border-left: 4px solid #2563eb;
+}
+
+.action-box p {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.btn-click {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 8px;
+    transition: background 0.2s;
+}
+
+.btn-click:hover {
+    background-color: #1d4ed8;
+}
+
+.more-info-link {
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+}
+
+.more-info-link:hover {
+    text-decoration: underline;
+}
+
+
+.closing-text {
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.footer-info {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+    width: fit-content;
+}
+
+.footer-info a {
+    color: #2563eb;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.school-name {
+    font-weight: bold;
+    color: #1e293b;
+}
