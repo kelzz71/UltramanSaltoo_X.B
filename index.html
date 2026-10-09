@@ -9,21 +9,24 @@
 <body>
 
     <div class="card-container">
-        <!-- Header Utama -->
         <header>
-            Informatika
+            Projek Ultraman Salto
         </header>
       
         <div class="author-tag">
-              <marquee>Muhammad Zidane Dioni R. </marquee>
+            <marquee> Kelas X-B </marquee>
         </div>
 
-        <div class="members-bar">
-            <span class="member-item">Zidane Soto</span>
-            <span class="member-item">Azriel Basreng </span>
-            <span class="member-item">Amanda</span>
-            <span class="member-item">Kayla</span>
-        </div>
+        <nav class="navbar">
+            <a href="#html-section" class="nav-item">About</a>
+            <a href="#css-section" class="nav-item">Profile</a>
+            <a href="#js-section" class="nav-item">Products</a>
+        </nav>
+
+        <section id="html-section" style="padding: 20px 30px;">
+            <h2>SMAN 71 Jakarta</h2>
+            <p>SMA Negeri 71 Jakarta, yang terletak di Kelurahan Duren Sawit Jakarta Timur berdiri tahun 1983 dengan tujuan untuk memenuhi kebutuhan pendidikan di Wilayah Jakarta Timur. Terutama Kelurahan Duren Sawit, Kecamatan Duren Sawit, yang diresmikan tanggal 07 Agustus 1983. Dengan Kepala Sekolah pertama Drs. Endang Suparman. Sebagai sekolah baru fasilitas masih terbatas dan seiring perkembangan.</p>
+        </section>
 
         <div class="content">
             <div class="group-title">
@@ -31,23 +34,33 @@
             </div>
 
             <div class="action-box">
-              <img src="Logo Ultraman Salto X-B.png" width="380">
-              <p>Logo Ultraman Salto X-B menggambarkan kelas kami sebagai satu lingkaran utuh yang tidak mudah terpecah, sama seperti pertemanan kami. Ultraman melambangkan sosok pelindung yang berani, sedangkan "Salto" menunjukkan sisi lincah kami yang cepat menyesuaikan diri. Bintang-bintang di sekelilingnya mewakili kreativitas setiap anggota, dan warna merah serta biru melambangkan keberanian dan semangat yang diimbangi ketenangan dan rasa saling percaya.</p>
-              <br>
-                  <a href="https://id.wikipedia.org/wiki/SMA_Negeri_71_Jakarta">Wikipedia Sman 71 Jakarta</a>
-              <br>
-              <br>
-             <iframe width="560" height="315" src="https://www.youtube.com/embed/BGwJFWKL2A0?si=iriOfNICqFldnElH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
- 
-              <br>
-            <a href="https://www.youtube.com/watch?v=BGwJFWKL2A0" target="_blank" class="btn-link">
-    Tonton Lagu Oasis
-</a       
-  <br>
-  <br>
-              <br>
+                <p>Ultraman Salto</p>
+                <img src="https://cdn.phototourl.com/member/2026-10-08-9ad11c12-67ef-4f29-84bf-2849e7edb5ad.png" width="350">
+                <p style="margin-top: 10px;">Oasis adalah band rock asal Inggris yang dibentuk di Manchester pada tahun 1991. Pada awalnya menggunakan nama the Rain, grup ini dibentuk oleh Liam Gallagher (vokal), Paul Arthurs (gitar), Paul McGuigan (bass), dan Tony McCarroll (drum dan perkusi).</p>
+                <br>
+                <a href="https://id.wikipedia.org/wiki/Oasis_(grup_musik)" target="_blank" class="more-info-link">Penjelasan Lebih Rinci</a>
+                <br>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/BGwJFWKL2A0?si=iriOfNICqFldnElH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <br><br>
+                <a href="https://www.youtube.com/watch?v=BGwJFWKL2A0" target="_blank" class="btn-click" style="display:inline-block; text-decoration:none;">Tonton Lagu Oasis</a>
+                <br><br>
                 <button class="btn-click" onclick="alert('Terima kasih sudah berkunjung!')">Click Me</button>
             </div>
+
+            <div class="team-buttons">
+                <button class="btn" onclick="showInfo('zidane')">Zidane Soto</button>
+                <button class="btn" onclick="showInfo('azriel')">Azriel Basreng</button>
+                <button class="btn" onclick="showInfo('amanda')">Amanda</button>
+                <button class="btn" onclick="showInfo('kayla')">Kayla</button>
+            </div>
+
+            <div class="info-card" id="info-card">
+                <h3 id="member-name">Pilih Anggota Tim</h3>
+                <p id="member-role">Klik Nama Anggota Untuk Melihat Profesi Masing Masing.</p>
+            </div>
+
+            <section id="css-section" style="padding: 25px 0;">
+            </section>
 
             <div class="closing-text">
                 Sekian Terimakasih
@@ -56,10 +69,47 @@
             <div class="footer-info">
                 Written by <a href="#">KELZZ.</a><br>
                 Visit us at:<br>
-                <span class="school-name">Sapta Eka Junior High School</span>
+                <span class="school-name">Sapta Eka High School</span>
             </div>
         </div>
     </div>
 
+    <script>
+        const teamData = {
+            zidane: {
+                name: "Zidane Soto",
+                role: "Web Programmer",
+                desc: "Bertanggung jawab merancang, merawat, dan mengembangkan sistem serta tampilan website."
+            },
+            azriel: {
+                name: "Azriel Basreng",
+                role: "App Programmer",
+                desc: "Bertanggung jawab mengembangkan dan mengoptimalkan aplikasi mobile maupun desktop."
+            },
+            amanda: {
+                name: "Amanda",
+                role: "Desain Grafis",
+                desc: "Bertanggung jawab membuat konsep visual, layout, serta elemen desain antarmuka."
+            },
+            kayla: {
+                name: "Kayla",
+                role: "Content Writer",
+                desc: "Bertanggung jawab menyusun narasi, teks tulisan, dan konten informasi pada aplikasi/web."
+            }
+        };
+
+        function showInfo(id) {
+            const member = teamData[id];
+            if (!member) return;
+            
+            const card = document.getElementById('info-card');
+            document.getElementById('member-name').innerText = `${member.name} — ${member.role}`;
+            document.getElementById('member-role').innerText = member.desc;
+            
+            card.classList.remove('active');
+            void card.offsetWidth;
+            card.classList.add('active');
+        }
+    </script>
 </body>
 </html>
